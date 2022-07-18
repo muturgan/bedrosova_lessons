@@ -1,7 +1,2 @@
-# hardhat-template
-a basic template for hardhat projectes
-
-for the project description updating run
-``` sh
-node rewrite.js
-```
+# bedrosova_lessons
+My home tasks for the Yuliya Bedrosova ERC20 cource

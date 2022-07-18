@@ -1,7 +1,7 @@
 {
-  "name": "hardhat-template",
+  "name": "bedrosova_lessons",
   "version": "1.0.0",
-  "description": "a basic template for hardhat projectes",
+  "description": "My home tasks for the Yuliya Bedrosova ERC20 cource",
   "author": "Andrey Sakharov <caxap_8787@mail.ru> (https://www.linkedin.com/in/andrey-sakharov/)",
   "license": "MIT",
   "engines": {
@@ -21,13 +21,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/muturgan/hardhat-template.git"
+    "url": "git+https://github.com/muturgan/bedrosova_lessons.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/muturgan/hardhat-template/issues"
+    "url": "https://github.com/muturgan/bedrosova_lessons/issues"
   },
-  "homepage": "https://github.com/muturgan/hardhat-template#readme",
+  "homepage": "https://github.com/muturgan/bedrosova_lessons#readme",
   "devDependencies": {
     "@nomiclabs/hardhat-etherscan": "^3.1.0",
     "@openzeppelin/contracts": "^4.7.0",
