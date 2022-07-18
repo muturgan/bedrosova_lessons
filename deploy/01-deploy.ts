@@ -9,6 +9,7 @@ const deployFunction: DeployFunction = async (hre) => {
 	const { deployer } = await getNamedAccounts();
 
 	await deploy('Lesson1', {
+		args: [42],
 		from: deployer,
 		log: true,
 	});
