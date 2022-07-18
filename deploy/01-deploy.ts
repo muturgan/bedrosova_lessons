@@ -8,12 +8,12 @@ const deployFunction: DeployFunction = async (hre) => {
 
 	const { deployer } = await getNamedAccounts();
 
-	await deploy('ContractName', {
+	await deploy('Lesson1', {
 		from: deployer,
 		log: true,
 	});
 };
 
-deployFunction.tags = ['ContractName'];
+deployFunction.tags = ['Lesson1'];
 
 export default deployFunction;
