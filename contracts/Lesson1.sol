@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+// https://github.com/muturgan/bedrosova_lessons/blob/master/contracts/Lesson1.sol
 pragma solidity ^0.8.15;
 
 import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
