@@ -32,6 +32,10 @@ const config: HardhatUserConfig = {
 		localhost: {
 			url: HARDHAT_PROVIDER_URL,
 		},
+		goerli: {
+			url: `https://goerli.infura.io/v3/${process.env.INFURA_ID}`,
+			accounts: [process.env.DEPLOYER_PRIVATE_KEY as string],
+		},
 		rinkeby: {
 			url: `https://rinkeby.infura.io/v3/${process.env.INFURA_ID}`,
 			accounts: [process.env.DEPLOYER_PRIVATE_KEY as string],
