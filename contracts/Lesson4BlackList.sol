@@ -125,6 +125,8 @@ contract Lesson4BlackList is ERC20, Ownable
 
 
 	function buyOnPresale() external payable {
+		require(stage() == PresaleStatus.PreSale, 'not a presale period');
+
 		uint256 amount = (msg.value * decimals()) / PRESALE_PRICE;
 		require(amount >= 1, 'Too little value!');
 
