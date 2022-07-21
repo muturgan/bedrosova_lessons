@@ -37,6 +37,11 @@ const config: HardhatUserConfig = {
 			url: `https://goerli.infura.io/v3/${process.env.INFURA_ID}`,
 			accounts: [process.env.DEPLOYER_PRIVATE_KEY as string],
 		},
+		sepolia: {
+			chainId: 11155111,
+			url: `https://rpc.sepolia.online`,
+			accounts: [process.env.DEPLOYER_PRIVATE_KEY as string],
+		},
 		rinkeby: {
 			url: `https://rinkeby.infura.io/v3/${process.env.INFURA_ID}`,
 			accounts: [process.env.DEPLOYER_PRIVATE_KEY as string],
@@ -44,6 +49,14 @@ const config: HardhatUserConfig = {
 	},
 	etherscan: {
 		apiKey: process.env.ETHERSCAN_API_KEY,
+		customChains: [{
+			network: 'sepolia',
+			chainId: 11155111,
+			urls: {
+				apiURL: 'https://rpc.sepolia.online',
+				browserURL: 'https://sepolia.etherscan.io',
+			},
+		}],
 	},
 	namedAccounts: {
 		deployer: 0,
