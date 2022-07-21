@@ -44,7 +44,7 @@ contract Lesson3Presale is ERC20, Ownable {
 		uint256 cost = currentPresalePrice();
 
 		uint256 amount = msg.value / cost;
-		require(amount > 1, 'Too little value!');
+		require(amount >= 1, 'Too little value!');
 
 		presaleCounter += amount;
 		require(
