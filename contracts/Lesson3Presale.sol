@@ -43,7 +43,7 @@ contract Lesson3Presale is ERC20, Ownable {
 	function buyOnPresale() external payable {
 		uint256 cost = currentPresalePrice();
 
-		uint256 amount = msg.value / cost;
+		uint256 amount = (msg.value * 10**18) / cost;
 		require(amount >= 1, 'Too little value!');
 
 		presaleCounter += amount;
