@@ -75,7 +75,7 @@ contract Lesson4BlackList is ERC20, Ownable
 	}
 
 	function addToBlackList(address[] calldata _addresses) external onlyOwner {
-		for (uint256 i; i <= _addresses.length; i++) {
+		for (uint256 i; i < _addresses.length; i++) {
 			addToBlackList(_addresses[i]);
 		}
 	}
@@ -85,7 +85,7 @@ contract Lesson4BlackList is ERC20, Ownable
 	}
 
 	function removeFromBlackList(address[] calldata _addresses) external onlyOwner {
-		for (uint256 i; i <= _addresses.length; i++) {
+		for (uint256 i; i < _addresses.length; i++) {
 			blackList[_addresses[i]] = false;
 		}
 	}
@@ -100,7 +100,7 @@ contract Lesson4BlackList is ERC20, Ownable
 	}
 
 	function addToFriends(address[] calldata _addresses) external onlyOwner {
-		for (uint256 i; i <= _addresses.length; i++) {
+		for (uint256 i; i < _addresses.length; i++) {
 			addToFriends(_addresses[i]);
 		}
 	}
@@ -110,7 +110,7 @@ contract Lesson4BlackList is ERC20, Ownable
 	}
 
 	function removeFromFriends(address[] calldata _addresses) external onlyOwner {
-		for (uint256 i; i <= _addresses.length; i++) {
+		for (uint256 i; i < _addresses.length; i++) {
 			blackList[_addresses[i]] = false;
 		}
 	}
